@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/08/18/2016-08-18-python-struct/index.html">
 <meta property="og:site_name" content="Aelous">
 <meta property="og:description" content="当我使用python.pack为SMGP编写协议时，当编写Login数据包时，需要传递30个字节流，‘8S16SBIB’，但经过 1struct.pack(&apos;8s16sBIB&apos;,val...) 得出来的却总是33，经过长时间的尝试发现如下问题：当pack单个char时 1struct.pack(&apos;c&apos;, str) 得到的长度是1，但当pack混合的类型时 1struct.pack(&apos;ic&apos;, in">
-<meta property="og:updated_time" content="2017-07-14T03:49:38.000Z">
+<meta property="og:updated_time" content="2017-08-01T22:55:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="struct.pack 占用空间问题">
 <meta name="twitter:description" content="当我使用python.pack为SMGP编写协议时，当编写Login数据包时，需要传递30个字节流，‘8S16SBIB’，但经过 1struct.pack(&apos;8s16sBIB&apos;,val...) 得出来的却总是33，经过长时间的尝试发现如下问题：当pack单个char时 1struct.pack(&apos;c&apos;, str) 得到的长度是1，但当pack混合的类型时 1struct.pack(&apos;ic&apos;, in">
