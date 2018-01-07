@@ -1,37 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-
-    <title>Aelous | 装饰器 </title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    
-
-    <!-- fonts -->
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
-
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="/style/doc.css">
-
-    <!-- favicon -->
+<head>
+  <meta charset="utf-8">
+  
+  <title>装饰器 | Aelous</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="装饰器关于装饰器的解释，Stack Overflow 有高分答案，可以参考：https://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators#answer-739665装饰器主要与python的几个特性有关：  函数是对象，可以进行赋值 函数里可以定义函数 函数可以返回函数 注意函数的调用方式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="装饰器">
+<meta property="og:url" content="http://yoursite.com/2017/11/09/2017-11-09-decorator/index.html">
+<meta property="og:site_name" content="Aelous">
+<meta property="og:description" content="装饰器关于装饰器的解释，Stack Overflow 有高分答案，可以参考：https://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators#answer-739665装饰器主要与python的几个特性有关：  函数是对象，可以进行赋值 函数里可以定义函数 函数可以返回函数 注意函数的调用方式">
+<meta property="og:updated_time" content="2018-01-07T00:30:47.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="装饰器">
+<meta name="twitter:description" content="装饰器关于装饰器的解释，Stack Overflow 有高分答案，可以参考：https://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators#answer-739665装饰器主要与python的几个特性有关：  函数是对象，可以进行赋值 函数里可以定义函数 函数可以返回函数 注意函数的调用方式">
+  
+    <link rel="alternate" href="/atom.xml" title="Aelous" type="application/atom+xml">
+  
+  
     <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/typing.css">
+</head>
 
+  
     
+      <body>
+    
+  
+      <div id="container" class="container">
+        <article id="post_layout-2017-11-09-decorator" class="article article-type-post_layout" itemscope itemprop="blogPost">
+  <header id="header" class="header">
+  <nav id="main-nav" class="main-nav">
+    
+      <a class="main-nav-link" href="/">Home</a>
+    
+      <a class="main-nav-link" href="/archives">Archives</a>
+    
+      <a class="main-nav-link" href="/about">About</a>
+    
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+    
+  </nav>
+</header>
 
-  </head>
-  <body>
+  <hr/>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      装饰器
+    </h1>
+  
 
-   <script>window.__INITIAL_STATE__ = {"page":{"title":"装饰器","path":"2017/11/09/2017-11-09-decorator/"},"data":{},"config":{"timezone":null,"root":"/","time_format":"HH:mm:ss","theme":"doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"/favicon.ico"}}}</script>
-
-    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot=""><nav class="doc-navbar"><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
-    <div class="doc-content">
-  <div class="dc-page">
-    <div class="dc-card">
-      <div id="react-search-results-root"></div>
-      <div id="page-content" class="doc-formatting">
+      </header>
+    
+    <div class="article-entry typo" itemprop="articleBody">
+      
         <h1 id="装饰器"><a href="#装饰器" class="headerlink" title="装饰器"></a>装饰器</h1><p>关于装饰器的解释，Stack Overflow 有高分答案，可以参考：<br><a href="https://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators#answer-739665" target="_blank" rel="external">https://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators#answer-739665</a><br>装饰器主要与python的几个特性有关：</p>
 <ol>
 <li>函数是对象，可以进行赋值</li>
@@ -45,25 +77,73 @@
 这样 t=d2(t) 了</li>
 </ol>
 
-        <div id="react-support-footer-root"></div>
-      </div>
+      
     </div>
+    <footer class="article-footer">
+      <ul class="article-meta">
+        <li>
+          <span class="label">Published Date:</span>
+          <a href="/2017/11/09/2017-11-09-decorator/" class="article-date">
+  <time datetime="2017-11-08T16:00:00.000Z" itemprop="datePublished">2017-11-09</time>
+</a>
+
+        </li>
+        
+        
+        <hr/>
+      </ul>
+    </footer>
   </div>
-</div>
-
+  
     
+<nav id="article-nav" class="article-nav">
+  
+    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
+  
+  
+    <a href="/2017/11/08/2017-11-08-tensorrt/" id="article-nav-older" class="article-nav-link-wrap older">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">TensorRT</div>
+    </a>
+  
+</nav>
 
 
-    
+  
+</article>
 
-    <!-- js vendors -->
-    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
 
-    <!-- js source  -->
-    <script src="/script/doc.js"></script>
 
-    
 
+      </div>
+      
+    <footer id="footer" class="post-footer footer">
+      <hr/>
+      <div id="footerContent" class="footer-content">
+        <p>ipsum dolor sit amet, <strong>consectetur adipiscing elit.</strong> Fusce eget urna vitae velit <em>eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque</em> penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Post</p>
+
+
+      </div>
+    </footer>
+
+      
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/typing.js"></script>
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+
+
+
+
+
+
+
+    </div>
   </body>
 </html>
